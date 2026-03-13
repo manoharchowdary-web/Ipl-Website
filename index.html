@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IPL Webpage</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:#f2f2f2;
+    text-align:center;
+}
+
+/* HEADER */
+
+header{
+    background-color:#1e3c72;
+    color:white;
+    padding:20px;
+}
+
+/* NAVBAR */
+
+nav{
+    background-color:#0f2027;
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    display:block;
+    color:rgb(85, 255, 0);
+    padding:14px 20px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background-color:#ddd;
+    color:black;
+}
+
+section{
+    padding:20px;
+}
+
+/* MAIN CONTENT CARDS */
+
+.card{
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    color:white;
+}
+
+/* CARD COLORS */
+
+.about{
+    background:#1e88e5;
+}
+
+.history{
+    background:#43a047;
+}
+
+.teams{
+    background:#fb8c00;
+}
+
+.popular{
+    background:#e53935;
+}
+
+/* FOOTER */
+
+footer{
+    background-color:#0f2027;
+    color:white;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* WELCOME SCREEN */
+
+#welcomeScreen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(#1e3c72,#0f2027);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-size:40px;
+    z-index:1000;
+    cursor:pointer;
+}
+
+#welcomeScreen p{
+    font-size:20px;
+}
+
+/* NEW ANIMATION FOR HIGHLIGHT CARDS */
+
+.highlight-card{
+    animation:fadeSlide 3.0s ease forwards;
+    opacity:0;
+}
+
+.highlight-card:nth-child(1){
+    animation-delay:1.0s;
+}
+
+.highlight-card:nth-child(2){
+    animation-delay:0.5s;
+}
+
+.highlight-card:nth-child(3){
+    animation-delay:0.8s;
+}
+
+.highlight-card:nth-child(4){
+    animation-delay:1.1s;
+}
+
+@keyframes fadeSlide{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+
+<div id="welcomeScreen">
+<h1>🏏 Welcome to IPL Website</h1>
+<p>Click anywhere to enter</p>
+</div>
+
+<!-- HEADER -->
+
+<header>
+<h1>Indian Premier League (IPL)</h1>
+<p>Welcome to IPL Official Fan Page</p>
+</header>
+
+<!-- NAVBAR -->
+
+<nav>
+<a href="index.html">Home</a>
+<a href="teams.html">Teams</a>
+<a href="matches.html">Matches</a>
+<a href="rankings.html">Points Table</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+<!-- ANIMATED HIGHLIGHT SECTION -->
+
+<section class="container mt-4">
+
+<h2 class="mb-4">🏏 IPL Match Highlights</h2>
+
+<div class="row">
+
+<div class="col-md-3 highlight-card">
+<div class="card bg-danger text-white shadow">
+<div class="card-body">
+<h5>LIVE MATCH</h5>
+<p>MI vs CSK</p>
+<p>Score: 165/4 (17 overs)</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 highlight-card">
+<div class="card bg-primary text-white shadow">
+<div class="card-body">
+<h5>NEXT MATCH</h5>
+<p>RCB vs KKR</p>
+<p>Today 7:30 PM</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 highlight-card">
+<div class="card bg-warning text-dark shadow">
+<div class="card-body">
+<h5>ORANGE CAP</h5>
+<p>Virat Kohli</p>
+<p>642 Runs</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 highlight-card">
+<div class="card bg-success text-white shadow">
+<div class="card-body">
+<h5>PURPLE CAP</h5>
+<p>Jasprit Bumrah</p>
+<p>22 Wickets</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- MAIN INFORMATION -->
+
+<section class="container">
+
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card about">
+<h2>About IPL</h2>
+<p>
+The Indian Premier League (IPL) is a professional T20 cricket league in India. 
+It features top players from around the world and is one of the most popular cricket leagues globally.
+</p>
+</div>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card history">
+<h2>IPL History</h2>
+<p>
+The IPL was founded in 2008 by the BCCI. The first season was won by Rajasthan Royals. 
+Since then the league has grown into one of the most watched cricket tournaments worldwide.
+</p>
+</div>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card teams">
+<h2>Popular IPL Teams</h2>
+<ul style="text-align:left">
+<li>Royal Challengers Bangalore (RCB)</li>
+<li>Mumbai Indians (MI)</li>
+<li>Chennai Super Kings (CSK)</li>
+<li>Kolkata Knight Riders (KKR)</li>
+<li>Delhi Capitals (DC)</li>
+<li>Sunrisers Hyderabad (SRH)</li>
+<li>Punjab Kings (PBKS)</li>
+<li>Rajasthan Royals (RR)</li>
+<li>Lucknow Super Giants (LSG)</li>
+<li>Gujarat Titans (GT)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card popular">
+<h2>Why IPL is Popular</h2>
+<p>
+IPL is famous for its exciting T20 matches, star players, global fan base, and entertainment value. 
+It mixes sports and entertainment making it one of the richest cricket leagues in the world.
+</p>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<p>&copy; 2026 IPL Fan Website | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+document.getElementById("welcomeScreen").onclick=function(){
+document.getElementById("welcomeScreen").style.display="none";
+};
+
+</script>
+
+</body>
+</html>
