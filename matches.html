@@ -45,9 +45,7 @@ nav a:hover{
     padding:40px;
     text-align:center;
 }
-
-/* Heading */
-h2{
+/* Heading */h2{
     margin-bottom:30px;
     color:#ff0000;
 }
@@ -60,6 +58,10 @@ h2{
     width:60%;
     border-radius:8px;
     box-shadow:0 4px 8px rgba(0,0,0,0.2);
+
+    /* Animation properties */
+    opacity: 0;
+    animation: fadeSlideUp 0.8s forwards;
 }
 
 /* Day Title */
@@ -73,6 +75,30 @@ h2{
     font-size:16px;
     margin:5px 0;
 }
+
+/* Animation */
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add delay for each box to appear sequentially */
+.day-box:nth-child(1) { animation-delay: 1.0s; }
+.day-box:nth-child(2) { animation-delay: 1.5s; }
+.day-box:nth-child(3) { animation-delay: 2.0s; }
+.day-box:nth-child(4) { animation-delay: 2.5s; }
+.day-box:nth-child(5) { animation-delay: 3.0s; }
+.day-box:nth-child(6) { animation-delay: 3.5s; }
+.day-box:nth-child(7) { animation-delay: 4.0s; }
+.day-box:nth-child(8) { animation-delay: 4.5s; }
+.day-box:nth-child(9) { animation-delay: 5.0s; }
+.day-box:nth-child(10){ animation-delay: 5.5; }
 
 </style>
 </head>
@@ -174,4 +200,3 @@ h2{
 
 </body>
 </html>
-
