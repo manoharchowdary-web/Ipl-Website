@@ -11,6 +11,8 @@ body{
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     margin:0;
+    background: linear-gradient(135deg,#0f2027,#1e3c72,#000000);
+    min-height:100vh;
 }
 
 /* HEADER */
@@ -31,7 +33,7 @@ nav{
 }
 
 nav a{
-    color:rgb(34, 255, 0);
+    color:rgb(34,255,0);
     padding:14px 20px;
     text-decoration:none;
 }
@@ -65,13 +67,12 @@ section{
     transition:0.3s;
     min-height:300px;
 
-    /* ANIMATION */
     opacity:0;
     transform:translateY(40px);
     animation:fadeSlide 1s forwards;
 }
 
-/* DIFFERENT DELAYS FOR EACH CARD */
+/* DIFFERENT DELAYS */
 
 .team-card:nth-child(1){animation-delay:1.0s;}
 .team-card:nth-child(2){animation-delay:1.5s;}
@@ -136,97 +137,96 @@ section{
 
 <div class="container">
 
-<h2 class="text-center mb-5">IPL Teams Information</h2>
+<h2 class="text-center text-white mb-5">IPL Teams Information</h2>
 
 <div class="team-grid">
 
 <div class="team-card shadow-sm">
-<img src="mi.jpg">
+<img src="../Public/images/mi.jpg">
 <h5>Mumbai Indians</h5>
 <p><strong>Captain:</strong> Hardik Pandya</p>
 <p><strong>Titles:</strong> 5</p>
-<p><strong>Titles won in years:2013,2015,2017,2019,2020</strong></p>
+<p><strong>Titles won in years: 2013, 2015, 2017, 2019, 2020</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="csk.png">
+<img src="../Public/images/csk.png">
 <h5>Chennai Super Kings</h5>
 <p><strong>Captain:</strong> Ruturaj Gaikwad</p>
 <p><strong>Titles:</strong> 5</p>
-<p><strong>Titles won in years:2010,2011,2018,2021,2023</strong></p>
+<p><strong>Titles won in years: 2010, 2011, 2018, 2021, 2023</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="rcb.jpg">
+<img src="../Public/images/rcb.jpg">
 <h5>Royal Challengers Bangalore</h5>
-<p><strong>Captain:</strong> RAJAT PATIDAR</p>
+<p><strong>Captain:</strong> Rajat Patidar</p>
 <p><strong>Titles:</strong> 1</p>
-<p><strong>Titles won in years:2025</strong></p>
+<p><strong>Titles won in years: 2025</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="kkr.png">
+<img src="../Public/images/kkr.png">
 <h5>Kolkata Knight Riders</h5>
-<p><strong>Captain:</strong> AJINKYA RAHANE</p>
+<p><strong>Captain:</strong> Ajinkya Rahane</p>
 <p><strong>Titles:</strong> 2</p>
-<p><strong>Titles won in years:2012,2014</strong></p>
+<p><strong>Titles won in years: 2012, 2014</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="rr.png">
-<h5>RAJASTHAN ROYALS</h5>
-<p><strong>Captain:</strong> SANJU SAMSON</p>
+<img src="../Public/images/rr.png">
+<h5>Rajasthan Royals</h5>
+<p><strong>Captain:</strong> Sanju Samson</p>
 <p><strong>Titles:</strong> 1</p>
-<p><strong>Titles won in years:2008</strong></p>
+<p><strong>Titles won in years: 2008</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
-
 <div class="team-card shadow-sm">
-<img src="srh.jpg">
-<h5>SUNRISERS HYDERABAD</h5>
-<p><strong>Captain:</strong> PAT CUMMINS</p>
+<img src="../Public/images/srh.jpg">
+<h5>Sunrisers Hyderabad</h5>
+<p><strong>Captain:</strong> Pat Cummins</p>
 <p><strong>Titles:</strong> 1</p>
-<p><strong>Titles won in years:2016</strong></p>
+<p><strong>Titles won in years: 2016</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="gt.png">
-<h5>GUJARAT TITANS</h5>
-<p><strong>Captain:</strong> SHUBMAN GILL</p>
+<img src="../Public/images/gt.png">
+<h5>Gujarat Titans</h5>
+<p><strong>Captain:</strong> Shubman Gill</p>
 <p><strong>Titles:</strong> 1</p>
-<p><strong>Titles won in years:2022</strong></p>
+<p><strong>Titles won in years: 2022</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="lsg.jpg">
-<h5>LUCKNOW SUPER GIANTS</h5>
-<p><strong>Captain:</strong> RISHAB PANT</p>
+<img src="../Public/images/lsg.jpg">
+<h5>Lucknow Super Giants</h5>
+<p><strong>Captain:</strong> Rishabh Pant</p>
 <p><strong>Titles:</strong> 0</p>
-<p><strong>Titles won in years:NONE</strong></p>
+<p><strong>Titles won in years: None</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="pbsk.png">
-<h5>PUNJAB SUPER KINGS</h5>
-<p><strong>Captain:</strong> SHREYAS IYER</p>
+<img src="../Public/images/pbsk.png">
+<h5>Punjab Kings</h5>
+<p><strong>Captain:</strong> Shreyas Iyer</p>
 <p><strong>Titles:</strong> 0</p>
-<p><strong>Titles won in years:NONE</strong></p>
+<p><strong>Titles won in years: None</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
 <div class="team-card shadow-sm">
-<img src="dc.jpg">
-<h5>DELHI CAPITALS</h5>
-<p><strong>Captain:</strong> KL RAHUL</p>
+<img src="../Public/images/dc.jpg">
+<h5>Delhi Capitals</h5>
+<p><strong>Captain:</strong> KL Rahul</p>
 <p><strong>Titles:</strong> 0</p>
-<p><strong>Titles won in years:NONE</strong></p>
+<p><strong>Titles won in years: None</strong></p>
 <p><strong>Founded:</strong> 2008</p>
 </div>
 
@@ -240,5 +240,3 @@ section{
 
 </body>
 </html>
-
-
